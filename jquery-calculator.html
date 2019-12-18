@@ -80,6 +80,27 @@
     $(document).ready(function () {
 
       // Your code here...
+      var firstNumber = "";
+      var operatorClicked = false;
+      $(".number").on("click", function (event) {
+        if (!operatorClicked) {
+          firstNumber += event.currentTarget.value
+          console.log(event.currentTarget.value);
+        } else {
+
+        }
+
+      })
+      $(".operator").on("click", function (event) {
+        console.log(event.currentTarget.value);
+        operatorClicked = true;
+      })
+      $(".equal").on("click", function (event) {
+
+      })
+      $(".clear").on("click", function (event) {
+
+      })
       // on event clicks for all buttons
       //on click :
       // - each digit needs to be appended to the display to make the initial value
